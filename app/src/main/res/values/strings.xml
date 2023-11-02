@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Noktakto</string>
+    <string name="player_one_name">Joueur 1</string>
+    <string name="player_two_name">Joueur 2</string>
+</resources>
