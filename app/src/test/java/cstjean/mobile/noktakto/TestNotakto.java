@@ -1,6 +1,7 @@
 package cstjean.mobile.noktakto;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -13,14 +14,20 @@ public class TestNotakto {
     /**
      * Variable qui invoque la classe notakto.
      */
-    private Notakto notakto;
+    private SingletonNotako notakto;
 
     /**
      * Setup un jeu de notakto pour se servir plus tard.
      */
     @Before
     public void setUp() {
-        notakto = new Notakto();
+        notakto = SingletonNotako.getInstance();
+    }
+
+    @Test
+    public void testInstance() {
+        SingletonNotako notakto2 = SingletonNotako.getInstance();
+        assertSame(notakto, notakto2);
     }
 
     /**
@@ -39,6 +46,7 @@ public class TestNotakto {
      */
     @Test
     public void testJouerTour() {
+        notakto.initialiser();
         assertEquals(false, notakto.getEstCoche(0));
         notakto.jouerTour(0);
         assertEquals(true, notakto.getEstCoche(0));
@@ -63,6 +71,48 @@ public class TestNotakto {
         notakto.jouerTour(0);
         notakto.jouerTour(1);
         notakto.jouerTour(2);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(3);
+        notakto.jouerTour(4);
+        notakto.jouerTour(5);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(6);
+        notakto.jouerTour(7);
+        notakto.jouerTour(8);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(0);
+        notakto.jouerTour(3);
+        notakto.jouerTour(6);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(1);
+        notakto.jouerTour(4);
+        notakto.jouerTour(7);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(2);
+        notakto.jouerTour(5);
+        notakto.jouerTour(8);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(0);
+        notakto.jouerTour(4);
+        notakto.jouerTour(8);
+        assertEquals(true, notakto.verifierDefaite());
+
+        notakto.initialiser();
+        notakto.jouerTour(2);
+        notakto.jouerTour(4);
+        notakto.jouerTour(6);
         assertEquals(true, notakto.verifierDefaite());
     }
 }
