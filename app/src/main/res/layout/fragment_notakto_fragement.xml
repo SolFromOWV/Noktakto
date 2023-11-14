@@ -282,5 +282,24 @@
 
         android:textSize="20sp" />
 
+    <TextView
+
+        android:id="@+id/text_perdant"
+
+        android:layout_width="300sp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="590sp"
+
+        android:layout_marginLeft="50sp"
+
+        android:text=""
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="20sp" />
+
 
 </RelativeLayout>

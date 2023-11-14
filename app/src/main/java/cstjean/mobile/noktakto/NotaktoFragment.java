@@ -1,5 +1,6 @@
 package cstjean.mobile.noktakto;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 /**
@@ -27,6 +27,7 @@ public class NotaktoFragment extends Fragment {
      * Bouton pour reset la partie.
      */
     private TextView texteJoueur;
+    private TextView textePerdant;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class NotaktoFragment extends Fragment {
         LinearLayout linearLayout3 = view.findViewById(R.id.layout_linear3);
 
         View.OnClickListener boutonClique = new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 Button bouton = (Button) view;
@@ -65,10 +67,7 @@ public class NotaktoFragment extends Fragment {
                     for (Button boutonFor : boutons) {
                         boutonFor.setEnabled(false);
                     }
-
-                    Toast texteJoueurPerdant = Toast.makeText(getContext(),
-                            "Le joueur perdant est " + joueurPresent, Toast.LENGTH_SHORT);
-                    texteJoueurPerdant.show();
+                    textePerdant.setText("Le joueur perdant est " + joueurPresent);
                 }
             }
         };
@@ -93,6 +92,7 @@ public class NotaktoFragment extends Fragment {
 
         final Button boutonReset = view.findViewById(R.id.btnReset);
         texteJoueur = view.findViewById(R.id.text_player);
+        textePerdant = view.findViewById(R.id.text_perdant);
 
         boutonReset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +105,8 @@ public class NotaktoFragment extends Fragment {
                 notakto.initialiser();
 
                 texteJoueur.setText("Joueur 1");
+
+                textePerdant.setText("");
             }
         });
 
