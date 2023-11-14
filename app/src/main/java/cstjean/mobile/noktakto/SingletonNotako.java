@@ -3,27 +3,40 @@ package cstjean.mobile.noktakto;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Singleton notakto.
+ */
 public class SingletonNotako {
+    /**
+     * Instance notakto.
+     */
     private static SingletonNotako instance = null;
-
-    private Boolean estTourJoueurUn = true;
     /**
      * Variable qui contient les boutons du jeu.
      */
     private final Map<Integer, Boolean> boutons = new HashMap<>(9);
-
-    public static SingletonNotako getInstance() {
-        if (instance == null) {
-            instance = new SingletonNotako();
-        }
-        return instance;
-    }
+    /**
+     * Bool qui décide c'est le tour de qui.
+     */
+    private Boolean estTourJoueurUn = true;
 
     /**
      * Constructeur qui initialise chaque bouton à false.
      */
     private SingletonNotako() {
         initialiser();
+    }
+
+    /**
+     * Getter de l'instance de singleton.
+     *
+     * @return L'instance.
+     */
+    public static SingletonNotako getInstance() {
+        if (instance == null) {
+            instance = new SingletonNotako();
+        }
+        return instance;
     }
 
     /**

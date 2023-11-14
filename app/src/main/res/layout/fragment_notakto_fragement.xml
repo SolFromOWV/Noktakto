@@ -84,6 +84,7 @@
         >
 
         <LinearLayout
+            android:id="@+id/layout_linear1"
 
             android:layout_width="wrap_content"
 
@@ -93,56 +94,57 @@
 
             >
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn0"
+<!--                android:id="@+id/btn0"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
+<!--                android:layout_marginBottom="1.25sp"-->
 
-                android:tag="0"
+<!--                android:tag="0"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn1"
+<!--                android:id="@+id/btn1"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="1"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="1"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn2"
+<!--                android:id="@+id/btn2"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="2"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="2"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layout_linear2"
 
             android:layout_width="wrap_content"
 
@@ -152,54 +154,55 @@
 
             >
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn3"
+<!--                android:id="@+id/btn3"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="3"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="3"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn4"
+<!--                android:id="@+id/btn4"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="4"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="4"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn5"
+<!--                android:id="@+id/btn5"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="5"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="5"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layout_linear3"
 
             android:layout_width="wrap_content"
 
@@ -209,50 +212,50 @@
 
             >
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn6"
+<!--                android:id="@+id/btn6"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="6"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="6"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn7"
+<!--                android:id="@+id/btn7"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="7"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="7"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
-            <Button
+<!--            <Button-->
 
-                android:id="@+id/btn8"
+<!--                android:id="@+id/btn8"-->
 
-                android:layout_width="75sp"
+<!--                android:layout_width="75sp"-->
 
-                android:layout_height="75sp"
+<!--                android:layout_height="75sp"-->
 
-                android:layout_marginHorizontal="5sp"
+<!--                android:layout_marginHorizontal="5sp"-->
 
-                android:layout_marginBottom="1.25sp"
-                android:tag="8"
+<!--                android:layout_marginBottom="1.25sp"-->
+<!--                android:tag="8"-->
 
-                android:textSize="26sp" />
+<!--                android:textSize="26sp" />-->
 
 
         </LinearLayout>
