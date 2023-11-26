@@ -17,16 +17,19 @@ public class NotaktoFragment extends Fragment {
     /**
      * Singleton notakto.
      */
-    private SingletonNotako notakto = SingletonNotako.getInstance();
+    private final SingletonNotako notakto = SingletonNotako.getInstance();
     /**
      * Liste de boutons.
      */
-    private Button[] boutons = new Button[9];
+    private final Button[] boutons = new Button[9];
 
     /**
      * Bouton pour reset la partie.
      */
     private TextView texteJoueur;
+    /**
+     * Texte pour afficher le perdant.
+     */
     private TextView textePerdant;
 
     @Override
@@ -44,31 +47,27 @@ public class NotaktoFragment extends Fragment {
         LinearLayout linearLayout2 = view.findViewById(R.id.layout_linear2);
         LinearLayout linearLayout3 = view.findViewById(R.id.layout_linear3);
 
-        View.OnClickListener boutonClique = new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View view) {
-                Button bouton = (Button) view;
-                bouton.setText("X");
-                String joueurPresent;
-                if (notakto.getEstTourJoueurUn()) {
-                    joueurPresent = "Joueur 1";
-                } else {
-                    joueurPresent = "Joueur 2";
+        View.OnClickListener boutonClique = view1 -> {
+            Button bouton = (Button) view1;
+            bouton.setText("X");
+            String joueurPresent;
+            if (notakto.getEstTourJoueurUn()) {
+                joueurPresent = "Joueur 1";
+            } else {
+                joueurPresent = "Joueur 2";
+            }
+            notakto.jouerTour(Integer.parseInt(bouton.getTag().toString()));
+            bouton.setEnabled(false);
+            if (notakto.getEstTourJoueurUn()) {
+                texteJoueur.setText(R.string.player_one_name);
+            } else {
+                texteJoueur.setText(R.string.player_two_name);
+            }
+            if (notakto.verifierDefaite()) {
+                for (Button boutonFor : boutons) {
+                    boutonFor.setEnabled(false);
                 }
-                notakto.jouerTour(Integer.parseInt(bouton.getTag().toString()));
-                bouton.setEnabled(false);
-                if (notakto.getEstTourJoueurUn()) {
-                    texteJoueur.setText(R.string.player_one_name);
-                } else {
-                    texteJoueur.setText(R.string.player_two_name);
-                }
-                if (notakto.verifierDefaite()) {
-                    for (Button boutonFor : boutons) {
-                        boutonFor.setEnabled(false);
-                    }
-                    textePerdant.setText("Le joueur perdant est " + joueurPresent);
-                }
+                textePerdant.setText("Le joueur perdant est " + joueurPresent);
             }
         };
 
@@ -94,20 +93,17 @@ public class NotaktoFragment extends Fragment {
         texteJoueur = view.findViewById(R.id.text_player);
         textePerdant = view.findViewById(R.id.text_perdant);
 
-        boutonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                for (Button boutonFor : boutons) {
-                    boutonFor.setEnabled(true);
-                    boutonFor.setText("");
-                }
-
-                notakto.initialiser();
-
-                texteJoueur.setText("Joueur 1");
-
-                textePerdant.setText("");
+        boutonReset.setOnClickListener(view2 -> {
+            for (Button boutonFor : boutons) {
+                boutonFor.setEnabled(true);
+                boutonFor.setText("");
             }
+
+            notakto.initialiser();
+
+            texteJoueur.setText("Joueur 1");
+
+            textePerdant.setText("");
         });
 
         return view;

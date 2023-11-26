@@ -4,8 +4,6 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
 
     android:layout_width="match_parent"
@@ -94,53 +92,6 @@
 
             >
 
-<!--            <Button-->
-
-<!--                android:id="@+id/btn0"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-
-<!--                android:tag="0"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn1"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="1"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn2"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="2"-->
-
-<!--                android:textSize="26sp" />-->
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -154,51 +105,6 @@
 
             >
 
-<!--            <Button-->
-
-<!--                android:id="@+id/btn3"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="3"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn4"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="4"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn5"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="5"-->
-
-<!--                android:textSize="26sp" />-->
-
         </LinearLayout>
 
         <LinearLayout
@@ -211,52 +117,6 @@
             android:orientation="horizontal"
 
             >
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn6"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="6"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn7"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="7"-->
-
-<!--                android:textSize="26sp" />-->
-
-<!--            <Button-->
-
-<!--                android:id="@+id/btn8"-->
-
-<!--                android:layout_width="75sp"-->
-
-<!--                android:layout_height="75sp"-->
-
-<!--                android:layout_marginHorizontal="5sp"-->
-
-<!--                android:layout_marginBottom="1.25sp"-->
-<!--                android:tag="8"-->
-
-<!--                android:textSize="26sp" />-->
-
 
         </LinearLayout>
 
